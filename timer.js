@@ -3,7 +3,7 @@ const helpers = require('./helpers');
 // prometheus things
 const promClient = require('prom-client');
 const g = new promClient.Gauge({
-  name: 'seconds',
+  name: 'prom_countdown:seconds',
   help: 'The Final Countdown!',
   labelNames: []
 });
