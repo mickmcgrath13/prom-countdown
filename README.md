@@ -9,11 +9,11 @@ Set the environment variable:
 `NUM_SECONDS` to be the number of seconds to count down from.
 
 Quick conversion:
-| Duration | Seconds Value |
-| -------- | ------------- |
-| 1 hr | 3600 |
-| 1 d | 86400 |
-| 1 w | 604800 |
+```
+- 1hr: 3600 s
+- 1d: 86400 s
+- 1w: 604800 s
+```
 
 
 
