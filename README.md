@@ -20,7 +20,7 @@ Quick conversion:
 ## Local Docker
 To run docker container locally, first build it:
 ```
-docker build -t prom-countdown .
+docker build -t bitovi-tests/prom-countdown .
 ```
 run it:
 ```

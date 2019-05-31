@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# login
+$(aws ecr get-login --no-include-email --region us-east-2)
+
+# build
+docker build -t bitovi-tests/prom-countdown .
+
+# tag
+docker tag bitovi-tests/prom-countdown:latest 832297766686.dkr.ecr.us-east-2.amazonaws.com/bitovi-tests/prom-countdown:latest
+
+#push
+docker push 832297766686.dkr.ecr.us-east-2.amazonaws.com/bitovi-tests/prom-countdown:latest
