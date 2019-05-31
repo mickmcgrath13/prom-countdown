@@ -1,0 +1,14 @@
+{
+  "name": "prom-countdown",
+  "version": "0.1.0",
+  "description": "nodejs app to count down to zero over a specified time",
+  "author": "Mick McGrath <mick@bitovi.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "prom-client": "^11.3.0"
+  }
+}
