@@ -51,7 +51,11 @@ timer.start = (numSeconds=0) => {
   timerId = setInterval(() => {
     const secondsSinceStart = helpers.date_diff_seconds(startDate, new Date);
     timer.setRemaining(numSeconds - secondsSinceStart);
-    console.log("remaining: ", timer.getRemaining());
+    
+    if(timer.getRemaining() % 10 === 0){
+      console.log("remaining: ", timer.getRemaining());
+    }
+
     if (timer.getRemaining() <= 0) {
       console.log("FINISHED", this);
       timer.setRemaining(0);
